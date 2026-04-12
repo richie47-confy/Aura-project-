@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #080808;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+.navbar{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    justify-content: space-between;
+    padding: 30px 5%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-sizing: border-box;
+
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+
+}
+.nav-links ul li{
+    list-style: none;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+.nav-links ul{
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.nav-button{
+    display: flex;
+    gap: 15px;
+}
+.btn-snr{
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btn-pry{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: ghostwhite;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.4) 50%, #000000 50%), 
+            url('images/background-image.avif');
+
+}
+.hero-sec h1{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.ideas{
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    color: #888;
+
+
+}
+.scroll-text{
+    margin: 50px;
+    display: block;
+}
+section{
+    padding: 100px 10%;
+}
+.sec-service h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.sec-tag{
+    color: #666;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 3rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+.service-grid{
+    display: grid;
+    grid-template-columns: ;
+    gap: 25px;
+    align-items: stretch;
+    margin-top: 50%;
+}
+.identity{
+    flex: 1;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    text-align: center;
+}
+.identity :hover{
+    background-color: #161616;
+    transform: translateY(-10px);
+    border-color: #444;
+}
+.icon{
+    font-size: 2rem;
+    margin-bottom: 20px
+
+}
+.form-card{
+    background-color: #1a1a1a;
+    padding: 50px;
+    max-width: 700px;
+    margin-top: 40p
+
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+.input label{
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 8px;
+
+}
+.input textarea{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+    color: white;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    font-size: 1rem;
+    
+}
+.btn-send{
+    background-color: #c9a050;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 100%;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+footer{
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 1px solid #222;
+}
+.scroll-top{
+    background-color: #c4a457;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+.back-to-top{
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: #c9a050;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+
+}
+@media (min-width:768px){
+    .hero h1 {font-size: 6rem;}
+    .section {padding: 150px 0; flex-direction: row;justify-content: center;gap: 30px;}
+
+}
